@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Player
 {
@@ -8,12 +9,12 @@ public class Player
     public string Name { get; set; }
     public int id { get; set; }
     public Strategy CurrentStrategy { get; set; }
-    public list<Strategy> AvailableStrategies { get; set; }
+    public List<Strategy> AvailableStrategies { get; set; }
 
     public Player(string name, int playerId)
     {
         Name = name;
         id = playerId;
-        AvailableStrategies = new list<Strategy>();
+        AvailableStrategies = new List<Strategy>();
     }
 }
