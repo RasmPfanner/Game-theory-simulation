@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Main_menu.uss?fileID=7433441132597879392&amp;guid=ea8adbf5cab1c96448fb54822cdbbbe1&amp;type=3#Main_menu"/>
     <ui:VisualElement name="Background" class="background" style="flex-grow: 1; background-size: 100% 100%; -unity-background-scale-mode: stretch-to-fill; width: 2334px; background-color: rgba(255, 239, 213, 0);">
-        <ui:VisualElement name="Matrix" class="menu matrix" style="flex-grow: 1; align-items: center; width: 50%; height: 200px; background-color: rgb(250, 240, 230);">
+        <ui:VisualElement name="Matrix1" class="menu matrix" style="flex-grow: 1; align-items: center; width: 50%; height: 200px; background-color: rgb(250, 240, 230);">
             <ui:Label text="Player 2 " name="Player2" style="align-items: stretch; top: 100px; font-size: 50px; align-self: center; -unity-text-align: upper-center;">
                 <ui:VisualElement name="Grid1" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: 100px; min-height: 0; max-height: 200px; right: 150px; justify-content: center; align-self: flex-start;">
                     <ui:TextField label="" placeholder-text="filler text" name="Strat1" style="align-items: center; justify-content: flex-end; align-self: center;"/>
@@ -34,6 +34,39 @@
             </ui:Label>
             <ui:Label text="Player 1  " name="Player1" style="align-items: center; top: -700px; font-size: 50px; left: -450px; -unity-text-align: upper-center; rotate: -90deg;"/>
         </ui:VisualElement>
-        <ui:Button text="Confirm" name="ButtonConfirm" style="border-left-color: rgb(255, 0, 248); border-right-color: rgb(255, 0, 248); border-top-color: rgb(255, 0, 248); border-bottom-color: rgb(255, 0, 248); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; align-self: center; width: 181px; height: 50px; position: absolute; top: 700px; right: auto; left: 917px;"/>
+        <ui:VisualElement name="Matrix2" class="menu matrix" style="flex-grow: 1; align-items: center; width: 50%; height: 200px; background-color: rgb(250, 240, 230);">
+            <ui:Label text="Player 2 " name="Player2" style="align-items: stretch; top: 100px; font-size: 50px; align-self: center; -unity-text-align: upper-center;">
+                <ui:VisualElement name="Grid1" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: 100px; min-height: 0; max-height: 200px; right: 150px; justify-content: center; align-self: flex-start;">
+                    <ui:TextField label="" placeholder-text="filler text" name="Strat1" style="align-items: center; justify-content: flex-end; align-self: center;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Grid2" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: 0; min-height: 0; max-height: 200px; right: -145px; justify-content: center; align-self: flex-start;">
+                    <ui:TextField label="" placeholder-text="filler text" name="Strat2" style="justify-content: flex-end; align-self: center; align-items: auto;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Grid3" style="flex-grow: 1; align-items: flex-end; width: 100px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -5px; min-height: 150px; max-height: 300px; right: 245px; justify-content: center; align-self: flex-start;">
+                    <ui:TextField label="" placeholder-text="filler text" name="Strat3" style="align-self: center; rotate: -90deg;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Grid4" style="flex-grow: 1; align-items: flex-end; width: 100px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -10px; min-height: 150px; max-height: 300px; right: 245px; justify-content: center; align-self: flex-start;">
+                    <ui:TextField label="" placeholder-text="filler text" style="rotate: -90deg;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Outcome1" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -305px; min-height: 150px; max-height: 300px; right: 150px; justify-content: center; align-self: flex-start; align-content: auto;">
+                    <ui:IntegerField label="" value="42" name="Payoff1_1" style="align-self: center; align-items: center; right: auto; top: 45px; left: -75px; bottom: 610px; align-content: auto;"/>
+                    <ui:IntegerField label="" value="42" name="Payoff2_1" style="align-self: center; align-items: center; right: auto; top: -45px; left: 75px; bottom: 600px; align-content: auto;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Outcome2" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -310px; min-height: 150px; max-height: 300px; right: 150px; justify-content: center; align-self: flex-start; align-content: auto;">
+                    <ui:IntegerField label="" value="42" name="Payoff1_2" style="align-self: center; align-items: center; right: auto; top: 45px; left: -75px; bottom: 610px; align-content: auto;"/>
+                    <ui:IntegerField label="" value="42" name="Payoff2_2" style="align-self: center; align-items: center; right: auto; top: -45px; left: 75px; bottom: 600px; align-content: auto;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Outcome3" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -605px; min-height: 150px; max-height: 300px; right: -145px; justify-content: center; align-self: flex-start; align-content: auto;">
+                    <ui:IntegerField label="" value="42" name="Payoff1_3" style="align-self: center; align-items: center; right: auto; top: 45px; left: -75px; bottom: 610px; align-content: auto;"/>
+                    <ui:IntegerField label="" value="42" name="Payoff2_3" style="align-self: center; align-items: center; right: auto; top: -45px; left: 75px; bottom: 600px; align-content: auto;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Outcome4" style="flex-grow: 1; align-items: flex-end; width: 300px; height: 100px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); top: -610px; min-height: 150px; max-height: 300px; right: -145px; justify-content: center; align-self: flex-start; align-content: auto;">
+                    <ui:IntegerField label="" value="42" name="Payoff1_4" style="align-self: center; align-items: center; right: auto; top: 45px; left: -75px; bottom: 610px; align-content: auto;"/>
+                    <ui:IntegerField label="" value="42" name="Payoff2_4" style="align-self: center; align-items: center; right: auto; top: -45px; left: 75px; bottom: 600px; align-content: auto;"/>
+                </ui:VisualElement>
+            </ui:Label>
+            <ui:Label text="Player 1  " name="Player1" style="align-items: center; top: -700px; font-size: 50px; left: -450px; -unity-text-align: upper-center; rotate: -90deg;"/>
+        </ui:VisualElement>
     </ui:VisualElement>
+    <ui:Button text="Confirm" name="ButtonConfirm" style="border-left-color: rgb(255, 0, 248); border-right-color: rgb(255, 0, 248); border-top-color: rgb(255, 0, 248); border-bottom-color: rgb(255, 0, 248); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; align-self: center; width: 181px; height: 50px; position: absolute; top: 700px; right: auto; left: 917px;"/>
 </ui:UXML>

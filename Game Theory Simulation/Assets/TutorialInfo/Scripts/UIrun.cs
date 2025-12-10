@@ -2,14 +2,13 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
 
-public class UIrun : MonoBehaviour // nedarver fra MonoBehaviour da UI er et GameObject
+public class UIrun : MonoBehaviour
 {
     private void Start()
     {
-        VisualElement root = GetComponent<> <GameMenu>().rootVisualElement; // referer root element af UI
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
         // referencer til IntegerFields i UI
-
         IntegerField Payoff1_1 = root.Q<IntegerField>("Payoff1_1");
         IntegerField Payoff2_1 = root.Q<IntegerField>("Payoff2_1");
         IntegerField Payoff1_2 = root.Q<IntegerField>("Payoff1_2");
@@ -25,12 +24,9 @@ public class UIrun : MonoBehaviour // nedarver fra MonoBehaviour da UI er et Gam
         // Når Button bliver clicked kører OnConfirmButtonClicked
         ButtonConfirm.clicked += () => OnConfirmButtonClicked(
             Payoff1_1, Payoff2_1, Payoff1_2, Payoff2_2, Payoff1_3, Payoff2_3, Payoff1_4, Payoff2_4);
-
-        // Skriv payoffs til konsollen når knappen er trykket
-        PrintPayoffsToConsole(payoffs);
     }
 
-    private (int, int, int, int, int, int, int, int) OnConfirmButtonClicked(
+    private void OnConfirmButtonClicked(
         IntegerField Payoff1_1,
         IntegerField Payoff2_1,
         IntegerField Payoff1_2,
@@ -49,8 +45,12 @@ public class UIrun : MonoBehaviour // nedarver fra MonoBehaviour da UI er et Gam
         int payoff1_4 = Payoff1_4.value;
         int payoff2_4 = Payoff2_4.value;
 
-        // returnerer alle payoffs som en tuple
-        return (payoff1_1, payoff2_1, payoff1_2, payoff2_2, payoff1_3, payoff2_3, payoff1_4, payoff2_4);
+        // Opret tuple med alle payoffs
+        (int, int, int, int, int, int, int, int) payoffs =
+            (payoff1_1, payoff2_1, payoff1_2, payoff2_2, payoff1_3, payoff2_3, payoff1_4, payoff2_4);
+
+        // Skriv payoffs til konsollen når knappen er trykket
+        PrintPayoffsToConsole(payoffs);
     }
 
     private void PrintPayoffsToConsole((int, int, int, int, int, int, int, int) payoffs)
